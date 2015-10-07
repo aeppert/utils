@@ -64,7 +64,7 @@ class pcap_header:
         print 'Magic: 0x%x' % (self.header['magic_number'])
         print 'Version: %d.%d' (self.header['version_major'], self.header['version_minor'])
         print 'GMT to Local Correction: %d' % (self.header['thiszone'])
-        print 'Accuracy of Timestamps: %d' % (self.header['sigfigs'])
+        print 'Accuracy of Timestamps: %d' % (self.header['sigflags'])
         print 'Max Length of Captured Packet (Snaplen): %d' % (self.header['snaplen'])
         print 'Data Link Type: %d' % (self.header['network'])
 
