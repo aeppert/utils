@@ -75,12 +75,6 @@ def main():
 
     (options, args) = parser.parse_args()
 
-    for o in options.__dict__.keys():
-        if not options.__dict__[o]:
-            print 'Error: %s not specified' % (o)
-            parser.print_help()
-            sys.exit(1)
-
     ph = pcap_header(options.pcap_file)
     ph.process()
 
